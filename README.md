@@ -51,7 +51,7 @@ cd el-meridiano
 git init
 git add .
 git commit -m "feat: portada inicial del diario El Meridiano"
-git remote add origin https://github.com/TU-USUARIO/el-meridiano.git
+git remote add origin https://github.com/frankito-web/el-meridiano.git
 git push -u origin main
 ```
 
