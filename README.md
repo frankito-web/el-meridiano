@@ -6,8 +6,6 @@ Trabajo Práctico: Portada de diario con Flexbox y Responsive Design (Mobile Fir
 
 **[https://frankito-web.github.io/el-meridiano/](https://frankito-web.github.io/el-meridiano/)**
 
----
-
 ## 📋 Descripción
 
 Portada de diario digital ficticio **El Meridiano**, diseñada con enfoque **Mobile First** y **CSS Flexbox** como herramienta principal de layout.
