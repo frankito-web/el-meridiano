@@ -40,9 +40,8 @@ el-meridiano/
 ## 🚀 Cómo ejecutar localmente
 
 ```bash
-git clone https://github.com/TU-USUARIO/el-meridiano.git
+git clone https://github.com/frankito-web/el-meridiano.git
 cd el-meridiano
-# Abrí index.html en tu navegador, o usá Live Server en VSCode
 ```
 
 ## 📤 Subir a GitHub Pages
