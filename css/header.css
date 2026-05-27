@@ -1,0 +1,226 @@
+/* ===== HEADER ===== */
+.site-header {
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: var(--spacing-md) 0;
+  border-bottom: 4px solid var(--color-accent);
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.logo-name {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--color-header-text);
+  line-height: 1;
+  text-align: center;
+}
+
+.logo-name span {
+  color: var(--color-accent);
+}
+
+.logo-tagline {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.header-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.header-edition {
+  font-weight: 700;
+  color: #ddd;
+}
+
+.header-search {
+  background: none;
+  border: 1px solid #555;
+  border-radius: 20px;
+  padding: 5px 14px;
+  color: var(--color-header-text);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: border-color var(--transition);
+  display: none; /* hidden on mobile */
+}
+
+.header-search:hover {
+  border-color: var(--color-accent);
+}
+
+/* ===== NAVIGATION ===== */
+.site-nav {
+  background-color: var(--color-nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* hamburger: visible on mobile */
+.nav-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 1.4rem;
+  color: var(--color-nav-text);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* nav links: hidden on mobile */
+.nav-links {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  display: block;
+  padding: 14px 12px;
+  color: var(--color-nav-text);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--color-accent);
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Breaking news ticker */
+.breaking-news {
+  background-color: var(--color-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 34px;
+}
+
+.breaking-label {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 14px;
+  white-space: nowrap;
+  background-color: rgba(0,0,0,0.25);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.breaking-ticker {
+  overflow: hidden;
+  flex: 1;
+}
+
+.breaking-ticker-inner {
+  display: flex;
+  gap: var(--spacing-xl);
+  animation: ticker 30s linear infinite;
+  white-space: nowrap;
+}
+
+.breaking-ticker-inner span {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.breaking-ticker-inner span::before {
+  content: "◆";
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ===== RESPONSIVE NAV ===== */
+@media (min-width: 768px) {
+  .nav-hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .header-search {
+    display: block;
+  }
+
+  .logo-name {
+    font-size: 3rem;
+  }
+
+  .header-meta {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-name {
+    font-size: 3.8rem;
+  }
+}
