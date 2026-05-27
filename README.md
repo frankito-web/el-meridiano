@@ -6,8 +6,6 @@ Trabajo Práctico: Portada de diario con Flexbox y Responsive Design (Mobile Fir
 
 **[https://frankito-web.github.io/el-meridiano/](https://frankito-web.github.io/el-meridiano/)**
 
-> ⚠️ Reemplazá `TU-USUARIO` con tu nombre de usuario de GitHub después de habilitar GitHub Pages.
-
 ---
 
 ## 📋 Descripción
